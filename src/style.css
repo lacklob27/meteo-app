@@ -173,7 +173,6 @@ main {
 
 .temperature-unit {
   display: flex;
-  margin-right: 5px;
 }
 
 .weather-app-temperature {
