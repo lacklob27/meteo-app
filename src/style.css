@@ -164,7 +164,7 @@ main {
   margin-right: 30px;
 }
 
-.weather-icon-image {
+.weather-app-icon-image {
   width: 190px;
   position: absolute;
   transform: translateX(-70%);
@@ -173,6 +173,7 @@ main {
 
 .temperature-unit {
   display: flex;
+  margin-right: 10px;
 }
 
 .weather-app-temperature {

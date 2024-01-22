@@ -1,3 +1,13 @@
+function updateIconBasedOnDescription(description) {
+  const iconElement = document.querySelector("#weather-app-icon-image");
+
+  switch (description.toLowerCase()) {
+    case "clear sky":
+      iconElement.innerHTML = `<img src="assets/ClearSky.png" alt="Clear Sky" class="weather-app-icon-image" />`;
+      break;
+  }
+}
+
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
@@ -13,6 +23,7 @@ function refreshWeather(response) {
   descriptionElement.innerHTML = capitalizeWords(
     response.data.condition.description
   );
+  updateIconBasedOnDescription(response.data.condition.description);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   temperatureElement.innerHTML = Math.round(temperature);
 
