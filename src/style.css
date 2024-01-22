@@ -165,7 +165,9 @@ main {
 }
 
 .weather-app-icon-image {
-  width: 190px;
+  max-height: 156px;
+  max-width: 190px;
+  margin-top: 5px;
   position: absolute;
   transform: translateX(-70%);
   z-index: 2;
